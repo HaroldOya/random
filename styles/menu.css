@@ -88,4 +88,21 @@ button{
     text-align: center;
 }
 
+.pink {
+    background-color: pink;
+}
+
+.perrosContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perroContainer {
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    border: dotted black 0.5px;
+}
+
 
