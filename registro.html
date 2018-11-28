@@ -27,6 +27,7 @@
                    <li class="nav"><a href="index.html">Inicio</a></li>
                    <li class="nav"><a href="registro.html">Registrate</a></li>
                    <li class="nav"><a href="gallery.html">Galería</a></li>
+                   <li class="nav"><a href="login.html">Login</a></li>
                 </ul>
             
        
@@ -44,8 +45,23 @@
                                 <br/>
                                 <span id="validarEmail"></span>
                                 <br/>
+                                <aria-label for="txtUsuario">Usuario:</aria-label>
+                                <br/>
+                                <input type="text" maxlength="12"
+                                 id="txtUsuario" 
+                                placeholder="Ingrese Usuario" required/>
+                                <br/>
+                                <br/>
+                                <aria-label for="txtContraseña">Contraseña:</aria-label>
+                                <br/>
+                                
+                                <input type="text" id="txtContraseña" 
+                                placeholder="Ingrese Contraseña" required/>
+                                <br/>
+                                <br/>
                                 <aria-label for="txtRut">Rut:</aria-label>
                                 <br/>
+                                
                                 <input type="text" maxlength="12"
                                        minlength="9" id="txtRut"
                                        onkeyup="modificarRut()" 

@@ -82,4 +82,11 @@
         100%{margin-left: -900px}
    
     }
+    .lista{
+        width: 100%;
+        border: ridge black 1px;
+    }
+    .lista-nombre{
+        border: ridge black 1px;
+    }
 }

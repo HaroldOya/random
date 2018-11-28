@@ -83,4 +83,20 @@
         100%{margin-left: -2400px}
    
     }
+
+    .perrosContainer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .lista{
+        padding: 10px;
+        margin: 5px;
+        width: 30%;
+        border: ridge black 1px;
+    }
+    .lista-nombre{
+        border: ridge black 1px;
+    }
 }
