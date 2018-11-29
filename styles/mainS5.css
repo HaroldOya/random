@@ -82,11 +82,12 @@
         100%{margin-left: -900px}
    
     }
-    .lista{
+    .perroContainer{
         width: 100%;
         border: ridge black 1px;
+        text-align: center;
     }
-    .lista-nombre{
+    .perroContainer p{
         border: ridge black 1px;
     }
 }

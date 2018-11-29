@@ -90,13 +90,15 @@
         flex-wrap: wrap;
         
     }
-    .lista{
+    .perroContainer{
         padding: 10px;
         margin: 5px;
         width: 30%;
         border: ridge black 1px;
+        text-align: center;
     }
-    .lista-nombre{
+    .perroContainer p{
         border: ridge black 1px;
+        
     }
 }
