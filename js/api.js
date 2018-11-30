@@ -8,6 +8,8 @@
         var xhttp = new XMLHttpRequest();
         var url = "https://pipeordenes.pythonanywhere.com/perros/";
 
+       
+
         xhttp.onreadystatechange = function() {
             if( this.readyState == 4 && this.status == 200 ){
                 console.log( this.responseText );
@@ -19,12 +21,14 @@
         xhttp.open( 'GET', url, true );
         xhttp.send();
     }
-
+    
     var displayPerros = function( perros ) {
         var perrosContainer = document.getElementById( "perrosContainer");
         perrosContainer.innerHTML = "";
-
+        
+        
         for( let perro of perros ) {
+            
             var perroContainer = document.createElement( "div" );
             var txtName = document.createElement( "h2" );
             var imgPerro = document.createElement( "img" );
@@ -46,9 +50,11 @@
             perroContainer.appendChild( txtDescription );
             // Agregar el contenedor al documento
             perrosContainer.appendChild( perroContainer );
+            
+            
         }
     }
-
+    
     app.perroEstadoFilter.addEventListener( "change", function( e ) {
         var filteredPerros = app.perroList.filter( function( perro ) {
             if( perro.estado == app.perroEstadoFilter.value ) {
@@ -59,4 +65,5 @@
     } );
     
     loadData();
+
 } ) ( );
