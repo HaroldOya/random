@@ -1,7 +1,7 @@
 (  function() {
     var app = {
         perroEstadoFilter: document.getElementById( "perroEstadoFilter" ),
-        perroList: [],
+        perroList: []
     }
 
     var loadData = function() {
@@ -13,7 +13,7 @@
                 console.log( this.responseText );
                 var data = JSON.parse( this.responseText );
                 displayPerros( data );
-                app.perroList = data.results;
+                app.perroList = data;
             }
         }
         xhttp.open( 'GET', url, true );
