@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+}
+img,embed,object,video{
+    max-width: 100%;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    font-family: "h1";
+    src: url("./h1.ttf");
+   
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body{
+	width: 80%;
+	margin-left: 10%;
+}
+img,embed,object,video{
+    max-width: 100%;
+}
+.Formulario{
+    border: dashed;
+    width: 40%;
+    padding: 50px;
+    margin: 40px 0px;
+    background-color: rgb(249, 249, 248,0.7);
+
+}
+.regis{
+	color: white;
+}
+button{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+footer{
+    background-color: rgba(242, 255, 0, 0.8);
+    width: 100%;
+    padding: 10px 10px;
+}
+main{
+	background-color: rgb(0, 0, 3, 0.7);
+	width: 100%;
+}
+
+
+.logo{
+	 margin-left: 10px;
+}
+
+
+footer{
+	width: 100%;
+    padding: 10px 10px;
+}
+.redes{
+    float: right;
+}

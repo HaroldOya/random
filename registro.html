@@ -1,71 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Mis perris</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="img/logo.png" />
-        <link rel="stylesheet" href="styles/menu.css">
-        <link rel="stylesheet" href="styles/mainS5.css">
-        <link rel="stylesheet" href="styles/mainMedio.css">
-        <link rel="stylesheet" href="styles/mainTablet.css">
-        <link rel="manifest" href="manifest.json">
-     
-       
-    </head>   
-    <body> 
-        <header>
-            <div>
-             <h1><img src="img/logo50.png" alt="logo mis perris"/>MIS PERRIS</h1> 
-             
-            </div>
-        </header>
-        <nav>
-            
-               <ul class="menu">
-                   <li class="nav"><a href="index.html">Inicio</a></li>
-                   <li class="nav"><a href="registro.html">Registrate</a></li>
-                   <li class="nav"><a href="gallery.html">Galería</a></li>
-                   <li class="nav"><a href="login.html">Login</a></li>
-                </ul>
-            
-       
-      </nav>
-      <main>
-          <center>
-              <h1  style="padding: 20px 0px" ><img src="img/logo50.png" alt="logo mis perris"/>Registrate Con Nosotros</h1>
+<html>
+<head>
+	<title>Electron</title>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="styles/s5.css">
+   	<link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/escritorio.css">
+
+</head>
+<body background="img/fondo2.jpg">
+		<header >
+			<div class="logo">
+				<img src="img/logo-50.png"/> Electron
+			</div>
+		
+		</header>
+		<nav>
+			<ul class="nav">
+            	<li class="nav"><a href="index.html">Inicio</a></li>
+            	<li class="nav"><a href="registro.html">Registrate</a></li>
+            	<li class="nav"><a href="login.html">Sesión</a></li>
+            	<li class="nav"><a href="ventas.html">Ventas</a></li>
+        	</ul>
+	</nav>
+	<main>
+	<center>
+              <h1 class="regis" style="padding: 20px 0px"><img src="img/logo-50.png" alt="logo mis perris"/>Registrate Con Nosotros</h1>
                 <div class="Formulario">
                         <form >
-                                <aria-label for="txtCorreo">Correo Electronico:</aria-label>
-                                <br/>
-                                <input type="email" maxlength="30"
-                                       minlength="10" id="txtCorreo" 
-                                placeholder="Ingrese Correo Electronico" required/>
-                                <br/>
-                                <span id="validarEmail"></span>
-                                <br/>
                                 <aria-label for="txtUsuario">Usuario:</aria-label>
                                 <br/>
-                                <input type="text" maxlength="12"
-                                 id="txtUsuario" 
+                                <input type="text" maxlength="30"
+                                       minlength="10" id="txtUsuario" 
                                 placeholder="Ingrese Usuario" required/>
                                 <br/>
+                                <span id="validarUsuario"></span>
                                 <br/>
                                 <aria-label for="txtContraseña">Contraseña:</aria-label>
                                 <br/>
-                                
-                                <input type="text" id="txtContraseña" 
-                                placeholder="Ingrese Contraseña" required/>
-                                <br/>
-                                <br/>
-                                <aria-label for="txtRut">Rut:</aria-label>
-                                <br/>
-                                
                                 <input type="text" maxlength="12"
-                                       minlength="9" id="txtRut"
+                                       minlength="9" id="txtContraseña"
                                        onkeyup="modificarRut()" 
-                                placeholder="Ingrese Rut" required/>
+                                placeholder="Ingrese Contraseña" required/>
                                 <br/>
                                 <br/>
                                 <aria-label for="txtNombre">Nombre Completo:</aria-label>
@@ -75,65 +55,43 @@
                                 placeholder="Ingrese Nombre Completo" required />
                                 <br />
                                 <br />
-                                <aria-label for="txtFechaNac">Fecha Nacimiento:</aria-label>
-                                <br/>
-                                <input type="date" id="txtFechaNac" placeholder="ingrese fecha Nacimiento" required
-                                max="2001-01-01"/>
-                                <br/>
-                                <br />
                                 <aria-label for="txtTelefono">Telefono:</aria-label>
                                 <br/>
                                 <input type="number" id="txtTelefono" placeholder="ingrese telefono" required minlength="8" />
                                 <br/>
-                                <br />
-                                <aria-label for="txtRegion">Region</aria-label>
                                 <br/>
-                                <select id="txtRegion" oninput="selectCity()">     
-                                </select>
+                                <aria-label for="txtSucursal">Tipo de Sucursal:</aria-label>
                                 <br/>
-                                <br />
-                                <aria-label for="txtCity">Ciudad</aria-label>
-                                <br/>
-                                <select id="txtCity">
-                        
-                                </select>
-                                <br/>
-                                <br/>
-                                <aria-label for="txtVivienda">Tipo de Vivienda:</aria-label>
-                                <br/>
-                                <select id="txtVivienda">
-                                    <option>Casa con patio Grande</option>
-                                    <option>Casa con patio pequeño</option>
-                                    <option>Casa sin patio</option>
-                                    <option>Departamento</option>
+                                <select id="txtSucursal">
+                                    <option>Republica</option>
+                                    <option>Santiago</option>
+                                    <option>Maipu</option>
+                                    <option>La Reina</option>
                                 </select>
                                 <br/>
                                 <br/>
                                 <button>Guardar</button>
-        
-                                <script src="js/region.js"></script>
-                                
                             </form>
-                            <script src="js/validator.js"></script>
                   </div>
 
           </center>
                 
+		
+	</main>
 
-          
-          
-      </main>
-
-      <footer>
+	<footer>
+		<div class="redes">
+            <img src="img/face50.png" alt="facebook icono"  >
+            <img src="img/insta50.png" alt="instagram icono" >
+            <img src="img/google50.png" alt="google icono" >
+            <img src="img/correo50.png" alt="correo icono" >
+        </div>
         &copy; Todos los Derechos Reservados
-            <div class="redes">
-                <img src="img/face50.png" alt="facebook icono"  >
-                <img src="img/insta50.png" alt="instagram icono" >
-                <img src="img/google50.png" alt="google icono" >
-                <img src="img/correo50.png" alt="correo icono" >
-            </div>
-      </footer>
-      <script src="js/app.js"></script>
-    </body> 
 
+
+	</footer>
+
+
+
+</body>
 </html>
